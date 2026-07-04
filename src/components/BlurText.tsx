@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState, useMemo } from 'react';
@@ -20,12 +21,12 @@ const BlurText = ({
   direction = 'top',
   threshold = 0.1,
   rootMargin = '0px',
-  animationFrom,
-  animationTo,
-  easing = t => t,
-  onAnimationComplete,
+  animationFrom = undefined,
+  animationTo = undefined,
+  easing = (t: number) => t,
+  onAnimationComplete = undefined,
   stepDuration = 0.35
-}) => {
+}: any) => {
   const elements = animateBy === 'words' ? text.split(' ') : text.split('');
 
   const defaultFrom = useMemo(

@@ -51,6 +51,7 @@ export const CONFIG = {
       urls: {
         demo: "https://mern-employee-dashboard-2fvl.vercel.app/dashboard",
         github: "https://github.com/kamleshkumaryadav5951-pixel/mern-employee-dashboard",
+        figma: undefined,
       },
       category: "Web App",
     },
